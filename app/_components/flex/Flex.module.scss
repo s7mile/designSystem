@@ -1,0 +1,137 @@
+.flex {
+  display: flex;
+  gap: var(--flex-gap, 0px);
+}
+> .flex {
+  --flex-gap: initial;
+  --flex-gap-pc: initial;
+}
+/* 모바일(기본) 스타일 */
+.direction-row {
+  flex-direction: row;
+}
+.direction-column {
+  flex-direction: column;
+}
+.direction-row-reverse {
+  flex-direction: row-reverse;
+}
+.direction-column-reverse {
+  flex-direction: column-reverse;
+}
+.justify-flex-start {
+  justify-content: flex-start;
+}
+.justify-flex-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+.align-flex-start {
+  align-items: flex-start;
+}
+.align-flex-end {
+  align-items: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.align-baseline {
+  align-items: baseline;
+}
+.wrap-nowrap {
+  flex-wrap: nowrap;
+}
+.wrap-wrap {
+  flex-wrap: wrap;
+}
+.wrap-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* 데스크탑(PC) 스타일 - 미디어 쿼리 (min-width: 768px) */
+@media (min-width: 768px) {
+  .pc-direction-row {
+    flex-direction: row;
+  }
+  .pc-direction-column {
+    flex-direction: column;
+  }
+  .pc-direction-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .pc-direction-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .pc-justify-flex-start {
+    justify-content: flex-start;
+  }
+  .pc-justify-flex-end {
+    justify-content: flex-end;
+  }
+  .pc-justify-center {
+    justify-content: center;
+  }
+  .pc-justify-space-between {
+    justify-content: space-between;
+  }
+  .pc-justify-space-around {
+    justify-content: space-around;
+  }
+  .pc-justify-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  .pc-align-stretch {
+    align-items: stretch;
+  }
+  .pc-align-flex-start {
+    align-items: flex-start;
+  }
+  .pc-align-flex-end {
+    align-items: flex-end;
+  }
+  .pc-align-center {
+    align-items: center;
+  }
+  .pc-align-baseline {
+    align-items: baseline;
+  }
+
+  .pc-wrap-nowrap {
+    flex-wrap: nowrap;
+  }
+  .pc-wrap-wrap {
+    flex-wrap: wrap;
+  }
+  .pc-wrap-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  /* 데스크탑 gap: pcGap 값이 있을 경우 이를 우선, 없으면 모바일 gap 사용 */
+  @media (min-width: 768px) {
+    .flex {
+      gap: var(--flex-gap-pc, var(--flex-gap, 0px));
+
+      // 자식 Flex 컴포넌트가 상속받지 않도록 초기화
+      > .flex {
+        --flex-gap: initial;
+        --flex-gap-pc: initial;
+      }
+    }
+  }
+}
