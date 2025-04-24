@@ -1,8 +1,8 @@
 import React from 'react';
 import type { Meta } from '@storybook/react';
-import Flex from '@/app/_components/flex';
-import Typography from './index';
-import { StoryType, TypographyProps } from './type';
+import Flex from '@/app/_components/Flex';
+import Typography from '@/app/_components/Typography';
+import { StoryType, TypographyProps } from '@/app/_components/Typography/type';
 
 const meta: Meta<typeof Typography.Heading1> = {
   title: 'Components/Typography',

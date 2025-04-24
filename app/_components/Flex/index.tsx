@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
+import { FlexProps } from '@/app/_components/Flex/type';
 import styles from './Flex.module.scss';
-import { FlexProps } from './type';
 
 const Flex = ({
   children,
