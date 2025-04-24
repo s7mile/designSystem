@@ -1,0 +1,66 @@
+.b {
+  max-width: var(--max-width);
+  width: var(--width);
+
+  height: calc(var(--height) * 1px);
+  line-height: calc(var(--height) * 1px);
+  border-radius: calc(var(--radius) * 1px);
+  border: 1px solid transparent;
+  text-align: center;
+
+  &:focus {
+    border: 1px solid transparent; // 미세한 움찔거림 방어
+  }
+
+  &.large {
+    padding: 13px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  &.small {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+
+  &.blue-01 {
+    background: var(--blue-01);
+    color: var(--fixed-white);
+  }
+
+  &.blue-02 {
+    background: var(--blue-02);
+    color: var(--fixed-white);
+  }
+
+  &.green {
+    background: var(--sub-green-01);
+    color: var(--fixed-white);
+  }
+
+  &.orange {
+    background: var(--orange-01);
+    color: var(--fixed-white);
+  }
+
+  &.grey1 {
+    background: var(--grey-02);
+    color: var(--fixed-white);
+  }
+
+  &.grey2 {
+    background: var(--grey-08);
+    color: var(--fixed-white);
+  }
+
+  &.grey3 {
+    background: var(--bright-02);
+    color: var(--mono-01);
+  }
+
+  &.grey4 {
+    background: var(--bright-04);
+    color: var(--grey-02);
+  }
+}
