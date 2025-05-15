@@ -1,11 +1,13 @@
 .flex {
   display: flex;
   gap: var(--flex-gap, 0px);
+
+  > .flex {
+    --flex-gap: initial;
+    --flex-gap-pc: initial;
+  }
 }
-> .flex {
-  --flex-gap: initial;
-  --flex-gap-pc: initial;
-}
+
 /* 모바일(기본) 스타일 */
 .direction-row {
   flex-direction: row;

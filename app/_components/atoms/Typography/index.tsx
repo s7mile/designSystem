@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import { ElementType } from 'react';
-import { TypographyProps, TypographyType } from '@/app/_components/Typography/type';
+import { TypographyProps, TypographyType } from '@/app/_components/atoms/Typography/type';
 import st from './Typography.module.scss';
 
 const createTypographyComponent = <T extends ElementType>(type: TypographyType) => {

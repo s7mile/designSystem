@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import React, { memo } from 'react';
-import { ButtonProps } from '@/app/_components/Button/type';
-import { getBtnStyle } from '@/app/_components/Button/util';
+import { ButtonProps } from '@/app/_components/atoms/Button/type';
+import { getBtnStyle } from '@/app/_components/atoms/Button/util';
 import st from './Button.module.scss';
 
 const Button = ({

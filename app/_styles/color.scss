@@ -1,0 +1,12 @@
+@import 'palette';
+
+body {
+  background-color: #fff;
+  @include light_theme;
+
+  &[data-theme='dark'],
+  .theme__dark {
+    background-color: #1c1c1c;
+    @include dark_theme;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { FlexProps } from '@/app/_components/Flex/type';
+import { FlexProps } from '@/app/_components/atoms/Flex/type';
 import styles from './Flex.module.scss';
 
 const Flex = ({

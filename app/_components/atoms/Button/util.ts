@@ -1,4 +1,4 @@
-import { TSize } from '@/app/_components/Button/type';
+import { TSize } from '@/app/_components/atoms/Button/type';
 import { CSSProperties } from 'react';
 
 export const getBtnStyle = (
